@@ -28,7 +28,7 @@ window.sliderInput =
           inputField.hide()
         change: ( event, ui ) ->
           inputField.val(ui.value).parents('.slider-container')
-          sliderValue.text(ui.value).trigger();
+          sliderValue.text(ui.value)
           currentSlider.applyGradient(currentSlider.find('.ui-slider-handle').css('left'))
         slide: ( event, ui ) ->
           inputField.val(ui.value).parents('.slider-container')
