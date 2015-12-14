@@ -77,10 +77,10 @@ describe FormSlider do
       @slider_html.should match('<label>Rating <span class=\"val\"></span></label>')
     end
 
-    it "generates a text input with the given value and name" do
+    it "generates a hidden input with the given value and name" do
       input = Nokogiri::HTML(@slider_html).at_css('input')
       input["value"].should == "10"
-      input["type"].should == "text"
+      input["type"].should == "hidden"
       input["name"].should == "film[rating]"
     end
 
