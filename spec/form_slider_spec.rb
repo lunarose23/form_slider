@@ -25,7 +25,7 @@ describe FormSlider do
     end
 
     it "generates a text input with the given value and name" do
-      @slider_html.should match('<input id="tickets" name="tickets" type="text" value="4" />')
+      @slider_html.should match('<input id="tickets" name="tickets" type="hidden" value="4" />')
     end
 
     it "generates a slider div with the appropriate data attributes" do
