@@ -25,7 +25,6 @@ window.sliderInput =
           currentSliderContainer.find('label').append(currentSlider.data('append'))
           sliderValue.text(inputField.attr('value'))
           currentSlider.applyGradient(currentSlider.find('.ui-slider-handle').css('left'))
-          inputField.hide()
         change: ( event, ui ) ->
           inputField.val(ui.value).parents('.slider-container')
           sliderValue.text(ui.value)
